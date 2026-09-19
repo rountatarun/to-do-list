@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <header class="header">
+        <div>
+          <p class="tag">STAY ORGANIZED</p>
+
+          <h1>Task<span>Flow</span></h1>
+
+          <p class="subtitle">Plan your day. Complete your goals.</p>
+        </div>
+
+        <div class="date">
+          <span id="day"></span>
+          <strong id="date"></strong>
+        </div>
+      </header>
+
+      <section class="add-card">
+        <form id="todo-form">
+          <div class="input-box">
+            <span>+</span>
+
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="What do you need to do?"
+              maxlength="100"
+            />
+          </div>
+
+          <button class="add-btn" type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section class="progress-card">
+        <div class="progress-top">
+          <div>
+            <p>Today's Progress</p>
+            <h2><span id="progress-percent">0</span>%</h2>
+          </div>
+
+          <div class="progress-info">
+            <strong id="completed-count">0</strong>
+            <span>of</span>
+            <strong id="total-count">0</strong>
+            <span>completed</span>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <div class="tasks-head">
+          <h2>My Tasks</h2>
+
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+
+            <button class="filter" data-filter="active">Active</button>
+
+            <button class="filter" data-filter="completed">Completed</button>
+          </div>
+        </div>
+
+        <div id="todo-list"></div>
+
+        <div id="empty-state" class="empty">
+          <div class="empty-icon">✓</div>
+
+          <h3>No tasks here</h3>
+
+          <p>Add a task above and start getting things done.</p>
+        </div>
+
+        <div class="footer">
+          <span>
+            <strong id="pending-count">0</strong>
+            tasks remaining
+          </span>
+
+          <button id="clear-completed">Clear completed</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="edit-modal" class="modal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Edit Task</h2>
+
+          <button id="close-modal">×</button>
+        </div>
+
+        <input type="text" id="edit-input" />
+
+        <div class="modal-actions">
+          <button id="cancel-edit" class="cancel">Cancel</button>
+
+          <button id="save-edit" class="save">Save Changes</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
