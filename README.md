@@ -3,7 +3,7 @@
 A clean, responsive, and easy-to-use To-Do List application built with HTML, CSS, and JavaScript to help you manage your daily tasks efficiently.
 
 ## 🔗 Live Demo
-Check out the live application here: [To-Do List App Live](https://rountatarun.github.io/to-do-list/) *(Apna live link yahan daal dena)*
+Check out the live application here: [To-Do List App Live](https://rountatarun.github.io/to-do-list/) 
 
 ## ✨ Features
 - **Add Tasks:** Quickly add new tasks to your daily list.
